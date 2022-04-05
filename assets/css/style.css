@@ -1,0 +1,101 @@
+/*  */
+
+/* RESET "universal" */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif ;
+    font-size: 13px;
+}
+
+
+/*____________________________________________________________________________________________________________________________*/
+
+/* Header */
+header {
+    height: 100px; 
+    background-color: black;
+}
+
+.header {
+    max-width: 1140px;
+    height: 100px;
+    margin: auto; /* centralizar a div */
+    color: white;
+    /* DISPLAY FLEX */
+    display: flex; 
+    align-items: center;
+}
+
+/* Logo */
+.logoimg {
+    width: 80px;
+    height: 80px;
+    background-color: #b28756;
+}
+
+.logo {
+    width: 100px;    
+}
+
+/* Menu / Navegação */
+.menu {
+    /* DISPLAY FLEX em relação a div pai*/
+    flex: 1; /* definir o espaço restante como o tamanho da div do menu */
+    /* DISPLAY FLEX */
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Lista */
+.menu ul {
+    /* DISPLAY FLEX */
+    display: flex;
+}
+
+/* Itens da Lista */
+.menu ul,
+.menu li {
+    list-style: none;
+}
+
+/* Links da navegação */
+.menu li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px; 
+    /* o "a" é por padrão inline e para poder estilizar a borda inferior de acordo com o layout pré-definido, 
+    temos que defini-lo como display block ou flex, podendo ter altura */   
+    display: flex; 
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid black;
+}
+
+.menu li a:hover,
+.menu .active a {
+    border-bottom: 5px solid #b28756;
+    color: #ccc;
+}
+
+
+/*____________________________________________________________________________________________________________________________*/
+
+
+
+/*____________________________________________________________________________________________________________________________*/
+
+
+
+/*____________________________________________________________________________________________________________________________*/
+
+
+
+/*____________________________________________________________________________________________________________________________*/
